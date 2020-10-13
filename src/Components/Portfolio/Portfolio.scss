@@ -1,0 +1,139 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("../../Assets/Font/design.collection1.aoaswfte.ttf");
+}
+
+.portfolio{
+    padding: 100px 0;
+    &__content{
+        h1{
+            color:#fff;
+            text-align: center;
+        }
+        &__choose{
+            color:#fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:20px 0;
+            p{
+                text-align: center;
+                min-width: 50px;
+                padding:10px 20px;
+                border:1px solid #fff;
+                font-size:1rem;
+
+                font-family: myFirstFont;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .active{
+                color:orangered;
+            }
+        }
+        &__items{
+            display: flex;
+            flex-wrap: wrap;
+            // max-width: 300px;
+            justify-content: center;
+            align-items: center;
+            &__item{
+                min-width: 200px;
+                margin:20px;
+                border:1px solid #fff;
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    cursor: pointer;
+                    .portfolio__content__items__item__view{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0px);
+                    }
+                    .portfolio__content__items__item__img{
+                        transform: scale(1.1);
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition:  transform .5s;
+                }
+                &__view{
+                    color:#111;
+                    font-weight: bold;
+                    position: absolute;
+                    width: 100%;
+                    // height: 100%;
+                    bottom: 0;
+                    text-align: center;
+                    padding:10px 0;
+                    background:rgba(255, 252, 252, 0.7);
+
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: transform .5s;
+                    transform: translateY(100px);
+                }
+            }
+          
+            .react{
+                transition:  all .5s;
+                animation: listMove 0.3s linear 0s 1 alternate;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:448px){
+
+    .portfolio{
+        padding: 100px 0;
+        &__content{
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            &__choose{
+                color:#fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:10px 0;
+                p{  
+                    // width: 10px;
+                    font-size:0.6rem;
+                    text-align: center;
+                    min-width: 50px;
+                    padding:5px 10px;
+                    border:1px solid #fff;
+             
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .active{
+                    color:orangered;
+                }
+            }
+
+        }
+    }
+}
+@keyframes listMove{
+    0%{
+        transform: translateX(-450px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-550px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

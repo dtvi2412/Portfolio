@@ -1,0 +1,160 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("./Assets/Font/design.collection1.aoaswfte.ttf");
+}
+$bgColor:#121212;
+$colorText:#fff;
+.app{
+    background-color: $bgColor;
+    .backToTop{
+        position: fixed;
+        right:10px;
+        bottom: 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
+        & > .MuiSvgIcon-root{
+            color:pink;
+        }
+    }
+    &__bgImage{
+       position: relative;
+    
+        img{
+            // position: absolute;
+            // top:0;
+            // left:0;
+            background-attachment: fixed;
+           width: 100%;
+           height: 100%;
+           object-fit: contain;
+        }
+        &__info{
+            position: absolute;
+            top:40%;
+            left:10%;
+            color:$colorText;
+            font-family: myFirstFont;
+            &__hello{
+                font-size:2.5rem;
+                position: relative;
+                &::before{
+                    content: '';
+                    border-top:2px solid red;
+                    width: 40px;
+                    height: 2px;
+                    position: absolute;
+                    top:-10px;
+                    animation: lineHello 3s linear 0s infinite alternate;
+                }
+                span{
+                    color:red;
+                }
+             
+            }
+            &__name{
+                font-size:4.8rem;
+                font-weight: bold;
+            }
+        }
+        //Social
+        &__social{
+            position: fixed;
+            right: 0px;
+            top:40%;
+            z-index: 999;
+            &__icon{  
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                transform: translateX(115px);
+                background-color: #5e8394;
+
+                padding:4px 3rem 4px 5px;        
+                text-align: center;
+                transition: .5s transform;
+
+                text-decoration: none;
+                color:$colorText;
+
+             
+            
+                font-size: 1rem;
+                line-height: 1rem;
+
+                //Hover Hien Icons socail
+                &:hover{
+                    transform: translateX(0px);
+                    cursor: pointer;
+                }
+                .socialName{
+                    margin-right: 5px;
+                }
+                //Logo social
+                & > .MuiSvgIcon-root{
+                    color:$colorText;      
+                    text-align: center;
+                
+                    
+                }
+            }
+            &__icon:nth-child(2){
+                margin:15px 0;
+              
+            }
+        }
+    
+    }
+}
+
+//Hieu ung chay before hello
+@keyframes lineHello{
+    from{
+        width: 0;
+      
+    }
+    to{
+        width: 40px;
+        
+    }
+}
+
+@media only screen and (max-width:900px){
+    .app{
+        &__bgImage{
+            &__info{
+                &__name{
+                    font-size: 2.2rem;
+                }
+                &__hello{
+                    font-size:1.9rem;
+                }
+            }
+            &__social{
+
+            }
+        }
+    }
+
+}
+//390px
+@media only screen and (max-width:390px){
+    .app{
+        &__bgImage{
+            &__info{
+                &__name{
+                    font-size: 1.6rem;
+                }
+                &__hello{
+                    font-size:1.1rem;
+                }
+            }
+            &__social{
+                
+            }
+        }
+    }
+
+}
