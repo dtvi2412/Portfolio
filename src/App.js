@@ -10,8 +10,11 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import About from './Components/About/About';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Portfolio from './Components/Portfolio/Portfolio';
+import FindOnMe from './Components/FindOnMe/FindOnMe';
+import Footer from './Components/Footer/Footer';
 function App() {
     const [backToTop, setBackToTop] = useState(false);
+    const [offSetY ,setOffSetY] = useState(0);
     useEffect(()=>{
         let text = "Front End Developer!";
         // text
@@ -88,6 +91,14 @@ function App() {
             </div>
             <div id="portfolio">
                 <Portfolio/>
+            </div>
+            {/* Find on me */}
+            <div id="contact">
+                <FindOnMe/>
+            </div>
+            {/* Footer */}
+            <div id="footer">
+                <Footer/>
             </div>
             {backToTop &&   <div className="backToTop" onClick={handleBackToTop} style={{color:"white"}}><ExpandLessIcon/></div> }
           

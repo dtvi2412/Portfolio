@@ -1,0 +1,22 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("../../Assets/Font/design.collection1.aoaswfte.ttf");
+}
+.footer{
+    background-color: #1c1c1c;
+    text-align: center;
+    padding:15px 0;
+    color:#fff;
+    h1{
+        font-size:1.2rem;
+        font-family: myFirstFont;
+    }
+}
+
+@media only screen and (max-width:448px){
+    .footer{
+        h1{
+            font-size:0.8rem;
+        }
+    }
+}

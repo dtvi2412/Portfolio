@@ -47,18 +47,18 @@ const Nav = () => {
                       About
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#" onClick={handleCloseNav}>
                       Service
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#portfolio" onClick={handleCloseNav}>
                       Portfolio
                     </a>
                   </li>
                   <li>
-                    <a href="#" onClick={handleCloseNav}>
+                    <a href="#contact" onClick={handleCloseNav}>
                       Contact
                     </a>
                   </li>

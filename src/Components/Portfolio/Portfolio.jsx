@@ -98,6 +98,7 @@ function Portfolio() {
               className="portfolio__content__items__item__img"
               src={item.image}
             />
+            <h1>{item.duAn}</h1>
             <div
               className="portfolio__content__items__item__view"
               onClick={() => handlePopupProduct(item)}
@@ -114,7 +115,8 @@ function Portfolio() {
             <img
               className="portfolio__content__items__item__img"
               src={item.image}
-            />
+            />{' '}
+            <h1>{item.duAn}</h1>
             <div
               className="portfolio__content__items__item__view"
               onClick={() => handlePopupProduct(item)}

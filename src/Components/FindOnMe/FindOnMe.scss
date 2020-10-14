@@ -1,0 +1,60 @@
+@font-face {
+    font-family: secondFont;
+    src: url("../../Assets/Font/Black\ Tail.ttf");
+  }
+  @font-face {
+    font-family: fir;
+    src: url("../../Assets/Font/design.collection1.aoaswfte.ttf");
+  }
+.findme{
+    padding:80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size:2.2rem;
+        color:#fff;font-family: fir ;
+        margin:20px 0;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{  
+            
+            text-decoration: none;
+            margin:0 20px;
+            transition: color .2s;
+            & > .MuiSvgIcon-root{
+                color:#fff;
+                font-size: 1.5rem;
+            }
+            &:hover{
+                overflow: hidden;
+                .MuiSvgIcon-root{
+                    
+                color:#f3713c;
+                // background-color: #fff;
+                
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:448px){
+    .findme{
+      padding:10px 0;
+      h1{
+          font-size: 1.6rem;
+      }
+      &__content{
+          a{
+              & > .MuiSvgIcon-root{
+                  font-size: 1.2rem;
+              }
+          }
+      }
+    }
+
+}

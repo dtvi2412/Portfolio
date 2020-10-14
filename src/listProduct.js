@@ -23,12 +23,12 @@ const product = [
       {
         id: 2,
         duAn: 'Todo List',
-        congNghe: 'Reacjs, LocalStorage,AOS animation',
+        congNghe: 'Reacjs, LocalStorage,AOS animation, Material UI',
         image: 'https://i.imgur.com/otQR7j3.png',
         imageDetail : 'https://i.imgur.com/lup4UUL.png',
         ngonNgu: 'REACJS',
         linkDemo: 'http://todolist-dtv.surge.sh/',
-        moTa:'Người dùng có thể ghi chú danh sách những công việc trong một ngày.Tự động reset sau một ngày.'
+        moTa:'Người dùng có thể ghi chú danh sách những công việc cẩn xử lý trong một ngày.Dữ liệu tự động cập nhật sau một ngày.'
       },
       {
         id: 4,
@@ -38,13 +38,13 @@ const product = [
         imageDetail:'https://i.imgur.com/7HvqHjP.png',
         ngonNgu: 'HTML',
         linkDemo: 'http://sass-mercedes.surge.sh/',
-        moTa:'Sử dụng HTML5, CSS3 tạo ra giao diện giống với giao diện SASS Mercedes'
+        moTa:'Sử dụng SASS, HTML5, CSS3, tạo ra giao diện giống với giao diện Mercedes'
 
       },
       {
         id: 9,
         duAn: 'Tix Cinema',
-        congNghe: 'Reacjs, Redux, Axios, Call API',
+        congNghe: 'Reacjs, Redux, Axios, Restful API, Formik, Material UI',
         image:'https://i.imgur.com/EZvOp6C.png',
         imageDetail:'https://i.imgur.com/skWoBrC.png',
         ngonNgu: 'REACJS',
@@ -54,7 +54,7 @@ const product = [
       {
         id: 3,
         duAn: 'Cinema',
-        congNghe: 'Reacjs, Redux, Axios, Call API, AOS Animation',
+        congNghe: 'Reacjs, Redux, Axios, Restful API, AOS Animation, Formik, Material UI',
         image: 'https://i.imgur.com/bvwHkQd.png',
         imageDetail :'https://i.imgur.com/YiUwESP.png',
         ngonNgu: 'REACJS',
@@ -66,7 +66,7 @@ const product = [
       {
         id: 5,
         duAn: 'Home Stead',
-        congNghe: 'HTML5, CSS3, JAVASCRIPT, Carousel',
+        congNghe: 'HTML5, CSS3, JAVASCRIPT, OWL CAROUSEL',
         image:'https://i.imgur.com/Z2VdLOQ.png',
         imageDetail:'https://i.imgur.com/yxXTrkj.png',
         ngonNgu: 'HTML',
@@ -76,7 +76,7 @@ const product = [
       {
         id: 6,
         duAn: 'Housing',
-        congNghe: 'HTML5, CSS3, JAVASCRIPT, Carousel',
+        congNghe: 'HTML5, CSS3, JAVASCRIPT, OWL CAROUSEL',
         image:'https://i.imgur.com/e9O4FVC.png',
         imageDetail:'https://i.imgur.com/bRBZa3G.png',
         ngonNgu: 'HTML',

@@ -34,6 +34,14 @@ function About() {
       id: 6,
       name: 'Laravel & MySQL',
     },
+    {
+      id: 7,
+      name: 'Formik & Postman',
+    },
+    {
+      id: 8,
+      name: 'TypeScript',
+    },
   ];
   //Load Language
   const [dataLanguage, setDataLanguage] = useState([]);

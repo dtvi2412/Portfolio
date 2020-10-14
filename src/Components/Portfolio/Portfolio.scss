@@ -3,7 +3,10 @@
     font-family: myFirstFont;
     src: url("../../Assets/Font/design.collection1.aoaswfte.ttf");
 }
-
+@font-face {
+    font-family: secondFont;
+    src: url("../../Assets/Font/Black\ Tail.ttf");
+  }
 .portfolio{
     padding: 100px 0;
     &__content{
@@ -45,6 +48,37 @@
                 border:1px solid #fff;
                 position: relative;
                 overflow: hidden;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.6);
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all .5s;
+                }
+                //name
+                h1{
+                    position: absolute;
+                    z-index: 20;
+                    font-size: 1.5rem;
+                    font-family: secondFont;
+
+                    // width: 100%;
+                    // height: 100%;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    // text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#ffecea;
+                }
                 &:hover{
                     cursor: pointer;
                     .portfolio__content__items__item__view{
@@ -54,6 +88,14 @@
                     }
                     .portfolio__content__items__item__img{
                         transform: scale(1.1);
+                    }
+                    &:after{
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    h1{
+                        
+                        animation: quay 0.5s linear 0.2s 1 alternate;
                     }
                 }
                 img{
@@ -67,6 +109,8 @@
                     font-weight: bold;
                     position: absolute;
                     width: 100%;
+                    font-size: 1.2rem;
+                    font-family: myFirstFont;
                     // height: 100%;
                     bottom: 0;
                     text-align: center;
@@ -119,6 +163,17 @@
                     color:orangered;
                 }
             }
+            &__items{
+                &__item{
+                    h1{
+                        font-size:0.7rem;
+                    }
+                    &__view{
+                        font-size: 0.9rem;
+                        padding: 5px 0;
+                    }
+                }
+            }
 
         }
     }
@@ -135,5 +190,17 @@
     100%{
         transform: translateX(0);
         opacity: 1;
+    }
+}
+@keyframes quay{
+    0%{
+        transform: translate(-50%,-50%) rotateY(0deg) ;
+        
+    }
+
+    100%{
+        transform: translate(-50%,-50%)  rotateY(360deg)  ;
+
+        
     }
 }
