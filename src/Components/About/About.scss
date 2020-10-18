@@ -61,6 +61,7 @@
                 }
                 &__info{
                     margin:10px 0;
+                  
                     h1{
                         font-size:1.2rem;
                     }
@@ -71,6 +72,7 @@
                     align-items: flex-start;
                     justify-content: center;
                   
+                
                     .item{
                         display: flex;
                         justify-content: space-between;
@@ -78,13 +80,24 @@
                         color:#fff;
                         margin:5px 0;
                         font-size: 0.9rem;
+                      
                         & > .MuiSvgIcon-root{
                             
                             margin-right: 5px;
                         }
+                        //Dia chi
+                        p{
+                            // font-family: myFirstFont;
+                            font-family: 'Times New Roman', Times, serif;
+                        }
                     }
+                  
                     a{
                         text-decoration: none;
+                        // transition: color .5s;
+                        // &:hover{
+                        //     color:orangered;
+                        // }
                     }
                 }
             }
@@ -92,13 +105,17 @@
                 display: flex;
                 flex-direction: column;
 
+                font-family: myFirstFont;
                 //do rong
                 max-width: 470px;
                 h1{
                     text-align: center;
+                   
                 }
                 p{
                     padding:10px 0;
+
+                    
                 }
 
                 &__recent{
@@ -133,6 +150,7 @@
            margin-bottom: 80px;
         }
         &__product{
+            font-family: myFirstFont;
             h1{
                 text-align: center;
                 font-size: 1.2rem;

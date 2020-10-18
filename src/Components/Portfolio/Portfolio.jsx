@@ -44,6 +44,7 @@ function Portfolio() {
   }, [checkNgonNgu]);
   const handleChangeNgonNgu = (name) => {
     //Check binding
+
     if (name === 'ALL') {
       setCheckNgonNgu('ALL');
     }
@@ -93,7 +94,7 @@ function Portfolio() {
       if (item.ngonNgu === checkNgonNgu) {
         return (
           // react
-          <div key={index} className="portfolio__content__items__item react ">
+          <div key={index} className="portfolio__content__items__item  react">
             <img
               className="portfolio__content__items__item__img"
               src={item.image}
@@ -111,7 +112,7 @@ function Portfolio() {
       if (checkNgonNgu === 'ALL') {
         return (
           // react
-          <div key={index} className="portfolio__content__items__item react">
+          <div key={index} className="portfolio__content__items__item react ">
             <img
               className="portfolio__content__items__item__img"
               src={item.image}
@@ -162,7 +163,9 @@ function Portfolio() {
               HTML5, CSS3, JAVASCRIPT
             </p>
           </div>
-          <div className="portfolio__content__items ">{renderData()}</div>
+          <div className="portfolio__content__items " data-aos="zoom-in-up">
+            {renderData()}
+          </div>
         </div>
       </div>
     </>

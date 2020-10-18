@@ -58,7 +58,12 @@ function About() {
     });
   };
 
-  const diaChi = '24/12/1998';
+  const infoMe = {
+    birthday: '24/12/1998',
+    address: 'Phường 3, TP.Cao Lãnh, Đồng Tháp',
+    github: 'https://github.com/dtvi2412',
+    gmail: 'dtvi2412@gmail.com',
+  };
   const [duLieu, setDuLieu] = useState([]);
   useEffect(() => {
     setDuLieu(data);
@@ -84,7 +89,7 @@ function About() {
   return (
     <div className="about">
       <div className="about__avarta">{/* <img src={image} /> */}</div>
-      <div className="about__content">
+      <div className="about__content" data-aos="zoom-in">
         <div className="about__content__text">
           <div className="about__content__text__avarta">
             <img src="https://i.imgur.com/Ry4P9Wx.png" alt="chandung" />
@@ -95,23 +100,23 @@ function About() {
             <div className="about__content__text__avarta__locale">
               <div className="item">
                 <DateRangeIcon />
-                <p>{diaChi}</p>
+                <p>{infoMe.birthday}</p>
               </div>
               <div className="item address">
                 <LocationOnIcon />
-                <p>Phường 3, TP.Cao Lãnh, Đồng Tháp</p>
+                <p>{infoMe.address}</p>
               </div>
-              <a
-                href="https://github.com/dtvi2412"
-                className="item"
-                target="_blank"
-              >
+              <a href={infoMe.github} className="item " target="_blank">
                 <GitHubIcon />
                 <p>Github</p>
               </a>
-              <a href="#" className="item">
+              <a
+                target="_blank"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                className="item "
+              >
                 <EmailIcon />
-                <p>dtvi2412@gmail.com</p>
+                <p>{infoMe.gmail}</p>
               </a>
             </div>
           </div>
@@ -134,7 +139,7 @@ function About() {
           </div>
         </div>
 
-        <div className="about__content__product">
+        <div className="about__content__product" data-aos="zoom-in">
           <h1>What I'm doing</h1>
 
           <div className="about__content__product__items">

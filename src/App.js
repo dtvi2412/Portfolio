@@ -12,10 +12,18 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Portfolio from './Components/Portfolio/Portfolio';
 import FindOnMe from './Components/FindOnMe/FindOnMe';
 import Footer from './Components/Footer/Footer';
+import AOS from 'aos';
+import "aos/dist/aos.css"
 function App() {
     const [backToTop, setBackToTop] = useState(false);
     const [offSetY ,setOffSetY] = useState(0);
     useEffect(()=>{
+        
+
+        AOS.init({
+            offset:350,
+            duration:1500
+        });
         let text = "Front End Developer!";
         // text
         let domdivText = document.querySelector(".app__bgImage__info__text");
@@ -61,7 +69,7 @@ function App() {
         <div className="app">
             <Nav/>
             {/* Background Image with Name */}
-            <div className="app__bgImage">
+            <div className="app__bgImage" >
                 <img  src={imageMe}/>
                 <div className="app__bgImage__info">
                     <h1 className="app__bgImage__info__hello">Hello<span>.</span></h1>
@@ -86,7 +94,7 @@ function App() {
             
             <div></div>
             {/* About */}
-            <div id="about">
+            <div id="about" >
             <About/>
             </div>
             <div id="portfolio">
