@@ -2,7 +2,7 @@ const product = [
     {
         id: 1,
         duAn: 'Shop Book',
-        congNghe: 'Reacjs, Redux, Firebase, DevPaypal(Sandbox)',
+        congNghe: 'Reactjs, Redux, Firebase, DevPaypal(Sandbox)',
         image: 'https://i.imgur.com/MBoTyCD.png',
         imageDetail:'https://i.imgur.com/PpL87gq.png',
         ngonNgu: 'REACJS',
@@ -13,7 +13,7 @@ const product = [
       {
         id: 8,
         duAn: 'Netflix HomePage',
-        congNghe: 'Reacjs, Call API,Reacjs Youtube',
+        congNghe: 'Reactjs, Call API,Reacjs Youtube',
         image:'https://i.imgur.com/YH9mIbD.png',
         imageDetail:'https://i.imgur.com/YVJ0DDw.png',
         ngonNgu: 'REACJS',
@@ -23,12 +23,23 @@ const product = [
       {
         id: 2,
         duAn: 'Todo List',
-        congNghe: 'Reacjs, LocalStorage,AOS animation, Material UI',
+        congNghe: 'Reactjs, LocalStorage,AOS animation, Material UI',
         image: 'https://i.imgur.com/otQR7j3.png',
         imageDetail : 'https://i.imgur.com/lup4UUL.png',
         ngonNgu: 'REACJS',
         linkDemo: 'http://todolist-dtv.surge.sh/',
         moTa:'Người dùng có thể ghi chú danh sách những công việc cẩn xử lý trong một ngày.Dữ liệu tự động cập nhật sau một ngày.'
+      },
+      {
+        id:10,
+        duAn:'Clone Instagram',
+        congNghe :'Reacjs, Firebase,  Material UI',
+        image:'https://i.imgur.com/t0CrqwD.png',
+        imageDetail:'https://i.imgur.com/t0CrqwD.png',
+        ngonNgu: 'REACJS',
+        linkDemo : '#',
+        moTa:'Sử dụng firebase để tạo tài khoản đăng nhập, đăng nhập thông qua facebook hoặc google.Thao tác với ReactJS tạo ra giao diện và các chức năng.'
+
       },
       {
         id: 4,
@@ -44,7 +55,7 @@ const product = [
       {
         id: 9,
         duAn: 'Tix Cinema',
-        congNghe: 'Reacjs, Redux, Axios, Restful API, Formik, Material UI',
+        congNghe: 'Reactjs, Redux, Axios, Restful API, Formik, Material UI',
         image:'https://i.imgur.com/EZvOp6C.png',
         imageDetail:'https://i.imgur.com/skWoBrC.png',
         ngonNgu: 'REACJS',
@@ -54,7 +65,7 @@ const product = [
       {
         id: 3,
         duAn: 'Cinema',
-        congNghe: 'Reacjs, Redux, Axios, Restful API, AOS Animation, Formik, Material UI',
+        congNghe: 'Reactjs, Redux, Axios, Restful API, AOS Animation, Formik, Material UI',
         image: 'https://i.imgur.com/bvwHkQd.png',
         imageDetail :'https://i.imgur.com/YiUwESP.png',
         ngonNgu: 'REACJS',
@@ -95,5 +106,6 @@ const product = [
         moTa:'Sử dụng HTML5, CSS3 tạo ra giao diện giống với giao diện Clothes'
 
       },
+
 ]
 export default product;
