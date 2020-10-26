@@ -11,6 +11,17 @@ const product = [
         moTa:'Thao tác với Firebase, tạo dữ liệu cần dùng, kết nối firebase với Reacjs, lấy những thông tin dữ liệu của firebase để đưa vào của redux, render và xử lý các chức năng của website, sử dụng developer paypal(sanbox) để tạo thông tin tài khoản paypal thanh toán trực tiếp qua paypal'
       },
       {
+        id:10,
+        duAn:'Clone Instagram',
+        congNghe :'Reacjs, Firebase, Material UI, SASS',
+        image:'https://i.imgur.com/t0CrqwD.png',
+        imageDetail:'https://i.imgur.com/7aDWloS.png',
+        ngonNgu: 'REACJS',
+        linkDemo : 'http://clone-instagram.surge.sh',
+        moTa:'Sử dụng firebase để tạo tài khoản đăng nhập, đăng nhập thông qua facebook hoặc google.Thao tác với ReactJS tạo ra giao diện và các chức năng.'
+
+      },
+      {
         id: 8,
         duAn: 'Netflix HomePage',
         congNghe: 'Reactjs, Call API,Reacjs Youtube',
@@ -30,17 +41,7 @@ const product = [
         linkDemo: 'http://todolist-dtv.surge.sh/',
         moTa:'Người dùng có thể ghi chú danh sách những công việc cẩn xử lý trong một ngày.Dữ liệu tự động cập nhật sau một ngày.'
       },
-      {
-        id:10,
-        duAn:'Clone Instagram',
-        congNghe :'Reacjs, Firebase,  Material UI',
-        image:'https://i.imgur.com/t0CrqwD.png',
-        imageDetail:'https://i.imgur.com/t0CrqwD.png',
-        ngonNgu: 'REACJS',
-        linkDemo : '#',
-        moTa:'Sử dụng firebase để tạo tài khoản đăng nhập, đăng nhập thông qua facebook hoặc google.Thao tác với ReactJS tạo ra giao diện và các chức năng.'
 
-      },
       {
         id: 4,
         duAn: 'SASS Mercedes',
