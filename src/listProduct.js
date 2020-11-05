@@ -32,6 +32,16 @@ const product = [
         moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
       },
       {
+        id:12,
+        duAn: 'Portfolio Template',
+        congNghe: 'ReactJS, Styled Components, LocalStorage',
+        image:'https://i.imgur.com/HKgvaT4.png',
+        imageDetail:'https://i.imgur.com/V0TTfzr.png',
+        ngonNgu:'REACJS',
+        linkDemo:'http://portfolio-template-dtv.surge.sh',
+        moTa:'Tạo template portfolio sử dụng công nghệ styled components',
+      },
+      {
         id: 2,
         duAn: 'Todo List',
         congNghe: 'Reactjs, LocalStorage,AOS animation, Material UI',
@@ -41,7 +51,16 @@ const product = [
         linkDemo: 'http://todolist-dtv.surge.sh/',
         moTa:'Người dùng có thể ghi chú danh sách những công việc cẩn xử lý trong một ngày.Dữ liệu tự động cập nhật sau một ngày.'
       },
-
+      {
+        id:11,
+        duAn:'Quiz',
+        congNghe: 'Reactjs, SASS',
+        image:'https://i.imgur.com/BOLQPLY.png',
+        imageDetail:'https://i.imgur.com/94iTKxq.png',
+        ngonNgu :'REACJS',
+        linkDemo:'http://quiz-dtv.surge.sh',
+        moTa:'Tạo những câu đố đã được tham khảo, cho người dùng thử sức với kiến thức của mình.Được build bằng Reactjs SASS'
+      },
       {
         id: 4,
         duAn: 'SASS Mercedes',
