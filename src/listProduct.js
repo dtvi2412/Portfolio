@@ -42,6 +42,16 @@ const product = [
         moTa:'Tạo template portfolio sử dụng công nghệ styled components',
       },
       {
+        id:13,
+        duAn: 'Tinder',
+        congNghe: 'ReactJS, Firebase ,Material UI',
+        image:'https://i.imgur.com/bmaxNcT.png',
+        imageDetail:'https://i.imgur.com/4bxH2eL.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://tinder-app-a1cc2.web.app',
+        moTa:'Sử dụng react và firebase clone giao diện Tinder.',
+      },
+      {
         id: 2,
         duAn: 'Todo List',
         congNghe: 'Reactjs, LocalStorage,AOS animation, Material UI',
