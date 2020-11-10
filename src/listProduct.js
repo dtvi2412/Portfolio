@@ -48,7 +48,7 @@ const product = [
         image:'https://i.imgur.com/bmaxNcT.png',
         imageDetail:'https://i.imgur.com/4bxH2eL.png',
         ngonNgu:'REACJS',
-        linkDemo:'https://tinder-app-a1cc2.web.app',
+        linkDemo:'https://tinder-app-a1cc2.firebaseapp.com',
         moTa:'Sử dụng react và firebase clone giao diện Tinder.',
       },
       {
