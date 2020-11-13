@@ -32,6 +32,16 @@ const product = [
         moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
       },
       {
+        id:14,
+        duAn: 'Youtube Clone',
+        congNghe: 'ReactJS ,Material UI',
+        image:'https://i.imgur.com/Y8Q3Jjk.png',
+        imageDetail:'https://i.imgur.com/rZyuH4S.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://clone-ddb15.firebaseapp.com',
+        moTa:'Sử dụng React JS ,Material UI và Firebase(deploy) clone giao diện Youtube.',
+      },
+      {
         id:12,
         duAn: 'Portfolio Template',
         congNghe: 'ReactJS, Styled Components, LocalStorage',
