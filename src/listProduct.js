@@ -42,6 +42,16 @@ const product = [
         moTa:'Sử dụng React JS ,Material UI và Firebase(deploy) clone giao diện Youtube.',
       },
       {
+        id:15,
+        duAn: 'Basketball',
+        congNghe: 'ReactJS, Firebase, Redux',
+        image:'https://i.imgur.com/tv1qKT5.png',
+        imageDetail:'https://i.imgur.com/wmijxEL.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://basketball-a3551.firebaseapp.com/',
+        moTa:'Môn bóng rổ là môn thể thao tôi yêu thích nên tôi đã tạo ra website này, tôi muốn lưu trữ những video của các ngôi sao bóng rổ và các kỹ năng để mình có thể xem và cho đồng đội xem mà không cần search trên youtube',
+      },
+      {
         id:12,
         duAn: 'Portfolio Template',
         congNghe: 'ReactJS, Styled Components, LocalStorage',
