@@ -52,6 +52,16 @@ const product = [
         moTa:'Môn bóng rổ là môn thể thao tôi yêu thích nên tôi đã tạo ra website này, tôi muốn lưu trữ những video của các ngôi sao bóng rổ và các kỹ năng để mình có thể xem và cho đồng đội xem mà không cần search trên youtube',
       },
       {
+        id:16,
+        duAn: 'Image Desgin',
+        congNghe: 'ReactJS, Firebase(deploy)',
+        image:'https://i.imgur.com/FkoLYao.png',
+        imageDetail:'https://i.imgur.com/ryVl7IB.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://clone-website-imagedesign98.web.app',
+        moTa:'Tôi sử dụng ReactJS để clone lại giao diện Image Desgin Custom và sử dụng Firebase để deploy.',
+      },
+      {
         id:12,
         duAn: 'Portfolio Template',
         congNghe: 'ReactJS, Styled Components, LocalStorage',
