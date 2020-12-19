@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Nav.scss';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
-const Nav = () => {
+const Nav = ({ checked }) => {
   const [bgNavScroll, setBgNavScroll] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +26,9 @@ const Nav = () => {
   };
   return (
     <>
+      {/* ${checked ? 'bgCheckTrueScroll' : 'nav'} */}
       {nav ? (
-        <div className={`nav ${bgNavScroll && 'bgNavScroll'}`}>
+        <div className={`nav  ${bgNavScroll && 'bgNavScroll'} `}>
           <div className="nav__content">
             <div className="nav__content__info">
               <div className="nav__content__info__logo">

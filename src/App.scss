@@ -4,8 +4,26 @@
 }
 $bgColor:#121212;
 $colorText:#fff;
-.app{
+// #4b5863
+.bgCheck{
+    background-color: #4b5863;
+}
+.bgUncheck{
     background-color: $bgColor;
+}
+.fade-bgCheck{
+    width: 100%;
+    height: 50px;
+   
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#4b5863);
+    position: absolute;
+    bottom: 0px;
+    left:0;
+
+    pointer-events: none;
+}
+.app{
+    // background-color: $bgColor;
     .backToTop{
         position: fixed;
         right:10px;
@@ -36,6 +54,40 @@ $colorText:#fff;
             left:10%;
             color:$colorText;
             font-family: myFirstFont;
+            &__change{
+                position: relative;
+                width: 80px;
+                height: 40px;
+                -webkit-appearance: none;
+                background:#c6c6c6;
+                outline: none;
+                border-radius: 20px;
+                transition: .5s;
+                box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                cursor: pointer;
+                margin-bottom: 20px;
+                &:checked[type="checkbox"]{
+                    background:#0f4f82;
+                }
+                &:checked[type="checkbox"]::before{
+                    left:40px;
+                }
+                &::before{
+                    content:'';
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    top:0;
+                    left:0;
+                    background:#fff;
+                    transform: scale(1.1);
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                    transition: .5s;
+                   
+                }
+            }
+
             &__hello{
                 font-size:2.5rem;
                 position: relative;
@@ -142,8 +194,20 @@ $colorText:#fff;
 //390px
 @media only screen and (max-width:390px){
     .app{
+      
         &__bgImage{
             &__info{
+                &__change{
+                    width: 40px;
+                    height: 20px;
+                    &:checked[type="checkbox"]::before{
+                        left:20px;
+                    }
+                    &::before{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
                 &__name{
                     font-size: 1.6rem;
                 }

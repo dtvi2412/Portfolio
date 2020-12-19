@@ -3,6 +3,7 @@ import React, { useEffect ,useState } from 'react';
 import './App.scss';
 // import imageMe from "./Assets/images/thomas-habr-185319-unsplash.jpg"
 import imageMe from "./Assets/images/me3.png";
+import imageMeCheck from "./Assets/images/me5.png";
 import Nav from './Components/Nav/Nav';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -64,18 +65,30 @@ function App() {
         window.scrollTo(0,0);
     }
    
+    //Check box change Background
+    const [checked,setChecked] = useState(false);
     return (
         <>
-        <div className="app">
-            <Nav/>
+        <div className={`app ${checked ? 'bgCheck' : 'bgUncheck'}`}>
+            <Nav checked={checked}/>
             {/* Background Image with Name */}
             <div className="app__bgImage" >
-                <img  src={imageMe}/>
+                {checked ? <img src={imageMeCheck}/> :  <img  src={imageMe}/>}
+                {/* <img  src={imageMe}/> */}
+
                 <div className="app__bgImage__info">
+                
                     <h1 className="app__bgImage__info__hello">Hello<span>.</span></h1>
+             
                     <h2 className="app__bgImage__info__name">I am Vỉ Đặng</h2>
                     <div className="app__bgImage__info__text"></div>
+                    <input  
+                        checked={checked}
+                        onChange={()=>setChecked(!checked)}
+                        type="checkbox" 
+                        className="app__bgImage__info__change" />
                 </div>
+                {checked &&   <div className="fade-bgCheck"/>}
                 {/* Social */}
                 <div className="app__bgImage__social">  
                     <a className="app__bgImage__social__icon" href="https://www.facebook.com/profile.php?id=100007255540779" target="_blank">  
