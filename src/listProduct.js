@@ -108,7 +108,7 @@ const product = [
         image: 'https://i.imgur.com/otQR7j3.png',
         imageDetail : 'https://i.imgur.com/lup4UUL.png',
         ngonNgu: 'REACJS',
-        linkDemo: 'http://todolist-dtv.surge.sh/',
+        linkDemo: 'https://todo-dtv.firebaseapp.com',
         moTa:'Người dùng có thể ghi chú danh sách những công việc cẩn xử lý trong một ngày.Dữ liệu tự động cập nhật sau một ngày.'
       },
       {
@@ -149,7 +149,7 @@ const product = [
         image: 'https://i.imgur.com/bvwHkQd.png',
         imageDetail :'https://i.imgur.com/YiUwESP.png',
         ngonNgu: 'REACJS',
-        linkDemo: 'http://cinema-dtv.surge.sh/',
+        linkDemo: 'https://cinema-dtv.firebaseapp.com',
         moTa:'Lấy thông tin dữ liệu từ API để hoàn thiện các chức năng của website cinema.Sử dụng tốt Redux và cách phân chia Service API, gửi dữ liệu khi đang lấy API về bằng redux thunk.'
       },
 
