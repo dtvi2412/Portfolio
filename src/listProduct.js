@@ -7,7 +7,7 @@ const product = [
         imageDetail:'https://i.imgur.com/PpL87gq.png',
         ngonNgu: 'REACJS',
         
-        linkDemo: 'http://shop-book.surge.sh/',
+        linkDemo: 'https://shop-bae1a.firebaseapp.com',
         moTa:'Thao tác với Firebase, tạo dữ liệu cần dùng, kết nối firebase với Reacjs, lấy những thông tin dữ liệu của firebase để đưa vào của redux, render và xử lý các chức năng của website, sử dụng developer paypal(sanbox) để tạo thông tin tài khoản paypal thanh toán trực tiếp qua paypal'
       },
       {
@@ -17,7 +17,7 @@ const product = [
         image:'https://i.imgur.com/t0CrqwD.png',
         imageDetail:'https://i.imgur.com/7aDWloS.png',
         ngonNgu: 'REACJS',
-        linkDemo : 'http://clone-instagram.surge.sh',
+        linkDemo : 'https://hosting-instagram-clone.firebaseapp.com',
         moTa:'Sử dụng firebase để tạo tài khoản đăng nhập, đăng nhập thông qua facebook hoặc google.Thao tác với ReactJS tạo ra giao diện và các chức năng.'
 
       },
