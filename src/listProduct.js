@@ -32,6 +32,16 @@ const product = [
         moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
       },
       {
+        id:19,
+        duAn: 'WAVELANE',
+        congNghe: 'ReactJS, Firebase(deploy)',
+        image:'https://i.imgur.com/U4n0qfq.png',
+        imageDetail:'https://i.imgur.com/5eLMvfQ.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://clone-wave-lane.firebaseapp.com',
+        moTa:'Tôi sử dụng ReactJS để clone lại giao diện Wavelane và sử dụng Firebase để deploy.',
+      },
+      {
         id:14,
         duAn: 'Youtube Clone',
         congNghe: 'ReactJS ,Material UI',
