@@ -42,6 +42,16 @@ const product = [
         moTa:'Tôi sử dụng ReactJS để clone lại giao diện Wavelane và sử dụng Firebase để deploy.',
       },
       {
+        id:20,
+        duAn: 'AGENCY LEGEND',
+        congNghe: 'ReactJS, Firebase(deploy)',
+        image:'https://i.imgur.com/BPTdDf9.png',
+        imageDetail:'https://i.imgur.com/h4RnNFf.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://agency-clone.web.app',
+        moTa:'Tôi sử dụng ReactJS để clone lại giao diện Agency Legend và sử dụng Firebase để deploy.',
+      },
+      {
         id:14,
         duAn: 'Youtube Clone',
         congNghe: 'ReactJS ,Material UI',
