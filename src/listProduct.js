@@ -32,6 +32,16 @@ const product = [
         moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
       },
       {
+        id:21,
+        duAn: 'LINE FRIENDS',
+        congNghe: 'ReactJS, Firebase(deploy)',
+        image:'https://i.imgur.com/tH8pyDo.png',
+        imageDetail:'https://i.imgur.com/w4SfieO.png',
+        ngonNgu:'REACJS',
+        linkDemo:'https://line-friends-clone.web.app',
+        moTa:'Tôi sử dụng ReactJS để clone lại giao diện Line Friends và sử dụng Firebase để deploy.',
+      },
+      {
         id:19,
         duAn: 'WAVELANE',
         congNghe: 'ReactJS, Firebase(deploy)',
