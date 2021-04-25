@@ -35,7 +35,7 @@ const product = [
         id:21,
         duAn: 'LINE FRIENDS',
         congNghe: 'ReactJS, Firebase(deploy)',
-        image:'https://i.imgur.com/tH8pyDo.png',
+        image:'https://i.imgur.com/7bKh235.png',
         imageDetail:'https://i.imgur.com/w4SfieO.png',
         ngonNgu:'REACJS',
         linkDemo:'https://line-friends-clone.web.app',
