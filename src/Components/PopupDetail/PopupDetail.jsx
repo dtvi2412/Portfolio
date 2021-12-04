@@ -20,7 +20,7 @@ function PopupDetail({ popUp, detailItem }) {
       </div>
       <div className="popup__content">
         <div className="popup__content__left">
-          <img src={detailItem.imageDetail} />
+          <img src={detailItem.imageDetail} alt="detail" />
         </div>
         <div className="popup__content__right">
           <div className="popup__content__right__title">
@@ -34,7 +34,11 @@ function PopupDetail({ popUp, detailItem }) {
           </div>
           <div className="popup__content__right__demo">
             <h1>View demo</h1>
-            <a target="_blank" href={detailItem.linkDemo}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={detailItem.linkDemo}
+            >
               <LinkIcon />
             </a>
           </div>

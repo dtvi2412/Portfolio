@@ -1,0 +1,240 @@
+.songs{
+    width:80%;
+    margin:150px auto;
+
+    display: flex;
+    align-items: flex-start;
+    // flex-direction: column;
+    justify-content: space-around;
+    &__cd{
+  
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        position: relative;
+        &__image{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        &__circleOut{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            
+            width:80px;
+            height: 80px;
+            background-color: rgba(107, 107, 107,0.9);
+            border:10px solid #111;
+            border-radius: 50%;
+        }
+        &__circleIn{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            
+            width:40px;
+            height: 40px;
+            background-color: rgba(107, 107, 107,1);
+            border:3px solid #111;
+            border-radius: 50%;
+        }
+  
+    }
+    &__label{
+        color:#fff;
+        text-align: center;
+        font-family: myFirstFont;
+        margin:20px 0;
+    }
+    &__control{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        &__play{
+            background:rgb(115, 233, 115);
+            width:80px;
+            height: 80px;
+            border-radius: 50%;
+            border:none;
+            text-align: center;
+            font-size:2.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+            cursor: pointer;
+            color:#fff;
+         
+            
+            background: #283c86;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            &:focus{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        &__previous, &__next{
+            width:80px;
+            height: 40px;
+            cursor: pointer;
+            font-size:2rem;
+            line-height: 2rem;
+            text-align: center;
+            border:none;
+            color:#fff;
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            &:focus{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+            &:hover{
+                opacity: 0.8;
+
+                background: #00b09b;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            }
+        }
+    }
+
+    &__progress{
+        appearance: none;
+        width: 100%; /* Full-width */
+        height: 10px; /* Specified height */
+        background: #d3d3d3; /* Grey background */
+        outline: none; /* Remove outline */
+        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+        border-radius: 10px;
+        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+        margin-top:20px;
+
+        background: #CB356B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #4947df; /* Green background */
+            border-radius: 50%;
+            cursor: pointer; /* Cursor on hover */
+            position: relative;
+
+            background: #EB5757;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+
+        }
+
+    }
+    &__list{
+        &::-webkit-scrollbar{
+            overflow-y: scroll;
+        }
+        h1{
+            color:#fff;
+            font-size:1.5rem;
+            font-family: thirdFont;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+
+            margin:20px 0;
+
+            cursor: pointer;
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border-radius: 10px;
+            overflow: hidden;
+            padding:5px 70px 5px 10px;
+            transition: all .3s;
+         
+            &:hover{
+                background: #a8ff78;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+                
+                
+                
+
+            }
+            &__image{
+                width:60px;
+                height: 60px;
+                img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+            }
+            &__text{
+                margin-left:15px;
+                h1{
+                    color:#fff;
+                    font-size:1rem;
+                    font-family: thirdFont;
+                }
+                p{
+                    font-size:0.8rem;
+                    color:rgb(128, 126, 126);
+                    font-family: myFirstFont;
+                    margin-top:3px;
+                }
+            }
+          
+ 
+        }
+        &__active{
+            background: #005AA7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            transition: all 4s;
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .songs{
+        flex-direction: column;
+        align-items: center;
+        &__list{
+            margin-top:80px;
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .songs{
+        width:90%;
+        &__cd{
+            width:200px;
+            height: 200px;
+        }
+        &__control{
+            &__play{
+                width:60px;
+                height: 60px;
+            }
+            &__previous, &__next{
+                width:60px;
+            }
+        }
+    }
+}

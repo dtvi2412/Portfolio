@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import image from '../../Assets/images/me3.png';
+// import image from '../../Assets/images/me3.png';
 import './About.scss';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -20,7 +20,7 @@ function About() {
     },
     {
       id: 3,
-      name: 'HTML & (S)CSS',
+      name: 'HTML5 & (S)CSS',
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ function About() {
     },
     {
       id: 6,
-      name: 'Laravel & MySQL',
+      name: 'Express & MongoDB',
     },
     {
       id: 7,
@@ -70,22 +70,22 @@ function About() {
     setDataLanguage(language);
   }, []);
 
-  const loadData = () => {
-    return duLieu.map((item) => {
-      return (
-        <div key={item.id} className="about__content__product__items__item">
-          {/* <img src={item.image} className="image" /> */}
-          <div className="about__content__product__items__item__info">
-            <h1>{item.duAn}</h1>
-            <p>I code with {item.congNghe}</p>
-            <a target="_blank" href={item.linkDemo}>
-              View Demo
-            </a>
-          </div>
-        </div>
-      );
-    });
-  };
+  // const loadData = () => {
+  //   return duLieu.map((item) => {
+  //     return (
+  //       <div key={item.id} className="about__content__product__items__item">
+  //         {/* <img src={item.image} className="image" /> */}
+  //         <div className="about__content__product__items__item__info">
+  //           <h1>{item.duAn}</h1>
+  //           <p>I code with {item.congNghe}</p>
+  //           <a target="_blank" href={item.linkDemo}>
+  //             View Demo
+  //           </a>
+  //         </div>
+  //       </div>
+  //     );
+  //   });
+  // };
   return (
     <div className="about">
       <div className="about__avarta">{/* <img src={image} /> */}</div>
@@ -106,12 +106,18 @@ function About() {
                 <LocationOnIcon />
                 <p>{infoMe.address}</p>
               </div>
-              <a href={infoMe.github} className="item " target="_blank">
+              <a
+                href={infoMe.github}
+                className="item "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GitHubIcon />
                 <p>Github</p>
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                 className="item "
               >
@@ -125,7 +131,8 @@ function About() {
             <p>
               My name is Vi, after graduating from the Cao Đẳng Kỹ Thuật Cao
               Thắng college, I got interested in Front-End web programming.So I
-              learned more knowledge at Cybersoft Academy and trained at home.
+              learned more knowledge at Cybersoft Academy and F8 Fullstack and
+              trained at home.
             </p>
             <div className="about__content__text__info__recent">
               <h1>
@@ -138,15 +145,12 @@ function About() {
             </div>
           </div>
         </div>
-
-        <div className="about__content__product" data-aos="zoom-in">
+        {/* What Im doing */}
+        {/* <div className="about__content__product" data-aos="zoom-in">
           <h1>What I'm doing</h1>
 
-          <div className="about__content__product__items">
-            {/* Load Du Lieu  */}
-            {loadData()}
-          </div>
-        </div>
+          <div className="about__content__product__items">{loadData()}</div>
+        </div> */}
       </div>
     </div>
   );

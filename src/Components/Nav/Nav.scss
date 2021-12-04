@@ -52,6 +52,11 @@ $color-white : #fff;
                         font-size:3.5rem;
                         font-family: thirdFont;
                     }
+                    &:hover{
+                        h1{
+                            text-shadow: 2px 2px 2px #cc0000;
+                        }
+                    }
                 }
               
             }
@@ -67,8 +72,28 @@ $color-white : #fff;
                             text-decoration: none;
                             color:$color-white;
                             font-size:1.6rem;
+                            position: relative;
+                            &::after{
+                                content:'';
+                                width:0%;
+                                height: 3px;
+                                border-radius: 50%;
+                                background: #f12711;  /* fallback for old browsers */
+                                background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+                                background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                                position: absolute;
+                                top:calc(100% + 2px);
+                                left:0;
+                                transition: width 0.3s;
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
                         }
                     }
+                }
+                .closeNav{
+                    display: none;
                 }
             }
                    //Menu
@@ -116,12 +141,14 @@ $color-white : #fff;
         // position: fixed;
         // top:0;
         // bottom: 0;
+        background-color: transparent;
+     
         &__content{
             width: 85%;
             margin:0 auto;
             &__info{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 &__logo{
                     a{
                         text-decoration: none;
@@ -129,23 +156,58 @@ $color-white : #fff;
                         h1{
                             color:$color-white;
                             font-size:2rem;
+                            text-shadow: 2px 2px 2px #cc0000;
                         }
                     }
                 }
                 nav{
+                    display: none;
+                    position: fixed;
+                    top:0;
+                    right:0;
+                    width:200px;
+                    min-height: 300px;
+                    background-color: #111;
+                    box-shadow: 0 0 10px #fff;
+                    transform: translateX(200px);
+                    // transition: all .3s;
+                    // animation : navMove linear .3s;
                     ul{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
                         li{
                             a{
                                 font-size: 1rem;
                             }
                         }
                     }
+                    .closeNav{
+                        display: block;
+                        color:#fff;
+                        position: absolute;
+                        right:10px;
+                        top:10px;
+                    }
                 }
                 .menu{
                     display: inline-block;
+
                     & > .MuiSvgIcon-root{
                         color:red;
                     }
+                }
+
+                //Navlist
+                .fixedBg{
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    right:0;
+
+                    background-color: rgba(0,0,0,0.6);
                 }
             }
         }
@@ -154,49 +216,57 @@ $color-white : #fff;
 
   //460px
   //580px
-@media only screen and (max-width:460px){
-    .nav{
+// @media only screen and (max-width:460px){
+//     .nav{
         
-        background-color: #1f1f1f ;
-        width: 100%;
-        height: 100%;
-        &__content{
-            width: 85%;
-            margin:0 auto;
-            &__info{
-                display: flex;
-                flex-direction: column;
-                &__logo{
-                    a{
-                        text-decoration: none;
-                        color:$color-white;
-                        h1{
-                            color:$color-white;
-                            font-size:2rem;
-                        }
-                    }
-                }
-                nav{
-                    ul{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                        li{
-                            a{
-                                font-size: 1rem;
-                            }
-                        }
-                    }
-                }
-                .menu{
-                    display: inline-block;
-                    & > .MuiSvgIcon-root{
-                        color:red;
-                    }
-                }
-            }
-        }
+//         background-color: #1f1f1f ;
+//         width: 100%;
+//         height: 100%;
+//         &__content{
+//             width: 85%;
+//             margin:0 auto;
+//             &__info{
+//                 display: flex;
+//                 flex-direction: column;
+//                 &__logo{
+//                     a{
+//                         text-decoration: none;
+//                         color:$color-white;
+//                         h1{
+//                             color:$color-white;
+//                             font-size:2rem;
+//                         }
+//                     }
+//                 }
+//                 nav{
+//                     ul{
+//                         display: flex;
+//                         flex-direction: column;
+//                         justify-content: center;
+//                         align-items: center;
+//                         height: 100%;
+//                         li{
+//                             a{
+//                                 font-size: 1rem;
+//                             }
+//                         }
+//                     }
+//                 }
+//                 .menu{
+//                     display: inline-block;
+//                     & > .MuiSvgIcon-root{
+//                         color:red;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//   }
+@keyframes navMove{
+    from{
+        transform: translateX(200px);
     }
-  }
+    to{
+        transform: translateX(0px);
+    }
+}

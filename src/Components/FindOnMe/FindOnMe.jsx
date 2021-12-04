@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -178,21 +178,30 @@ function FindOnMe() {
         {/* Find me  */}
         <div className="findme">
           <div className="findme__img" data-aos="fade-out">
-            <img src={linkImage} alt="link image" />
+            <img src={linkImage} alt="find-me" />
           </div>
           <div>
             <h1>Find me on</h1>
             <div className="findme__content">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.facebook.com/profile.php?id=100007255540779"
               >
                 <FacebookIcon />
               </a>
-              <a target="_blank" href="https://github.com/dtvi2412">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/dtvi2412"
+              >
                 <GitHubIcon />
               </a>
-              <a target="_blank" href="https://www.instagram.com/dangthaivi/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/dangthaivi/"
+              >
                 <InstagramIcon />
               </a>
             </div>

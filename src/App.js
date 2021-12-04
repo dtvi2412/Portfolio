@@ -3,7 +3,7 @@ import React, { useEffect ,useState } from 'react';
 import './App.scss';
 // import imageMe from "./Assets/images/thomas-habr-185319-unsplash.jpg"
 import imageMe from "./Assets/images/me3.png";
-import imageMeCheck from "./Assets/images/me5.png";
+// import imageMeCheck from "./Assets/images/me5.png";
 import Nav from './Components/Nav/Nav';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -15,9 +15,10 @@ import FindOnMe from './Components/FindOnMe/FindOnMe';
 import Footer from './Components/Footer/Footer';
 import AOS from 'aos';
 import "aos/dist/aos.css"
+import Songs from './Components/Songs/Songs';
 function App() {
     const [backToTop, setBackToTop] = useState(false);
-    const [offSetY ,setOffSetY] = useState(0);
+    // const [offSetY ,setOffSetY] = useState(0);
     useEffect(()=>{
         
 
@@ -66,15 +67,18 @@ function App() {
     }
    
     //Check box change Background
-    const [checked,setChecked] = useState(false);
+    // const [checked,setChecked] = useState(false);
     return (
         <>
-        <div className={`app ${checked ? 'bgCheck' : 'bgUncheck'}`}>
-            <Nav checked={checked}/>
+        {/* <div className={`app ${checked ? 'bgCheck' : 'bgUncheck'}`}> */}
+        <div className={`app bgUncheck`}>
+            <Nav />
             {/* Background Image with Name */}
-            <div className="app__bgImage" >
-                {checked ? <img src={imageMeCheck}/> :  <img  src={imageMe}/>}
-                {/* <img  src={imageMe}/> */}
+            <div id="home" className="app__bgImage" >
+                {/* Check thay doi background */}
+                {/* {checked ? <img src={imageMeCheck}/> :  <img  src={imageMe}/>} */}
+
+                <img alt="background" src={imageMe}/>
 
                 <div className="app__bgImage__info">
                 
@@ -82,22 +86,22 @@ function App() {
              
                     <h2 className="app__bgImage__info__name">I am Vỉ Đặng</h2>
                     <div className="app__bgImage__info__text"></div>
-                    <input  
+                    {/* <input  
                         checked={checked}
                         onChange={()=>setChecked(!checked)}
                         type="checkbox" 
-                        className="app__bgImage__info__change" />
+                        className="app__bgImage__info__change" /> */}
                 </div>
-                {checked &&   <div className="fade-bgCheck"/>}
+                {/* {checked &&   <div className="fade-bgCheck"/>} */}
                 {/* Social */}
                 <div className="app__bgImage__social">  
-                    <a className="app__bgImage__social__icon" href="https://www.facebook.com/profile.php?id=100007255540779" target="_blank">  
+                    <a className="app__bgImage__social__icon" href="https://www.facebook.com/profile.php?id=100007255540779" rel="noopener noreferrer" target="_blank">  
                      <div className="socialName"><FacebookIcon/></div><p>Contact</p>
                     </a>
-                    <a className="app__bgImage__social__icon" href="https://www.instagram.com/dangthaivi" target="_blank">  
+                    <a className="app__bgImage__social__icon" href="https://www.instagram.com/dangthaivi" rel="noopener noreferrer" target="_blank">  
                      <div className="socialName"><InstagramIcon/></div><p>View</p>
                     </a>
-                    <a className="app__bgImage__social__icon" href="https://github.com/dtvi2412" target="_blank">  
+                    <a className="app__bgImage__social__icon" href="https://github.com/dtvi2412" rel="noopener noreferrer" target="_blank">  
                      <div className="socialName"><GitHubIcon/></div><p>Overview</p>
                     </a>
                    
@@ -112,6 +116,9 @@ function App() {
             </div>
             <div id="portfolio">
                 <Portfolio/>
+            </div>
+            <div id="songs">
+                <Songs/>
             </div>
             {/* Find on me */}
             <div id="contact">

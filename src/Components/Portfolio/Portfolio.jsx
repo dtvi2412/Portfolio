@@ -7,14 +7,14 @@ function Portfolio() {
   const [dataProduct, setDataProduct] = useState([]);
   useEffect(() => {
     setDataProduct(data);
-  }, []);
+  }, [data]);
   const [checkNgonNgu, setCheckNgonNgu] = useState('ALL');
   //POPUP ITEM
   const [popUp, setPopup] = useState(false);
   const [detailItem, setDetailItem] = useState('');
   //Handle Send Item Popup
   const handlePopupProduct = (item) => {
-    console.log(item);
+    // console.log(item);
     setDetailItem(item);
     setPopup(true);
   };
@@ -42,9 +42,9 @@ function Portfolio() {
       });
     });
   }, [checkNgonNgu]);
+
   const handleChangeNgonNgu = (name) => {
     //Check binding
-
     if (name === 'ALL') {
       setCheckNgonNgu('ALL');
     }
@@ -55,24 +55,50 @@ function Portfolio() {
       setCheckNgonNgu('HTML');
     }
   };
+
+  // const [currentIndexDataProduct, setCurrentIndexDataProduct] = useState(9);
   const renderData = () => {
     //   Cach 1
     // if (checkNgonNgu === 'ALL') {
-    //   return dataProduct.map((item, index) => {
-    //     return (
-    //       <div key={index} className="portfolio__content__items__item">
-    //         <img src={item.image} />
-    //       </div>
-    //     );
-    //   });
+    //   return dataProduct
+    //     .slice(0, currentIndexDataProduct)
+    //     .map((item, index) => {
+    //       return (
+    //         <div key={index} className="portfolio__content__items__item react">
+    //           <img
+    //             className="portfolio__content__items__item__img"
+    //             src={item.image}
+    //             alt={`name-${item.duAn}`}
+    //           />{' '}
+    //           <h1>{item.duAn}</h1>
+    //           <div
+    //             className="portfolio__content__items__item__view"
+    //             onClick={() => handlePopupProduct(item)}
+    //           >
+    //             View Detail
+    //           </div>
+    //         </div>
+    //       );
+    //     });
     // }
     // if (checkNgonNgu === 'REACJS') {
     //   return dataProduct
     //     .filter((item) => item.ngonNgu === 'REACJS')
     //     .map((item, index) => {
     //       return (
-    //         <div key={index} className="portfolio__content__items__item">
-    //           <img src={item.image} />
+    //         <div key={index} className="portfolio__content__items__item react">
+    //           <img
+    //             className="portfolio__content__items__item__img"
+    //             src={item.image}
+    //             alt={`name-${item.duAn}`}
+    //           />{' '}
+    //           <h1>{item.duAn}</h1>
+    //           <div
+    //             className="portfolio__content__items__item__view"
+    //             onClick={() => handlePopupProduct(item)}
+    //           >
+    //             View Detail
+    //           </div>
     //         </div>
     //       );
     //     });
@@ -82,13 +108,24 @@ function Portfolio() {
     //     .filter((item) => item.ngonNgu === 'HTML')
     //     .map((item, index) => {
     //       return (
-    //         <div key={index} className="portfolio__content__items__item">
-    //           <img src={item.image} />
+    //         <div key={index} className="portfolio__content__items__item react">
+    //           <img
+    //             className="portfolio__content__items__item__img"
+    //             src={item.image}
+    //             alt={`name-${item.duAn}`}
+    //           />
+    //           <h1>{item.duAn}</h1>
+    //           <div
+    //             className="portfolio__content__items__item__view"
+    //             onClick={() => handlePopupProduct(item)}
+    //           >
+    //             View Detail
+    //           </div>
     //         </div>
     //       );
     //     });
     // }
-
+    // return null;
     //Cach 2
     return dataProduct.map((item, index) => {
       if (item.ngonNgu === checkNgonNgu) {
@@ -98,6 +135,7 @@ function Portfolio() {
             <img
               className="portfolio__content__items__item__img"
               src={item.image}
+              alt={`name-${item.duAn}`}
             />
             <h1>{item.duAn}</h1>
             <div
@@ -116,6 +154,7 @@ function Portfolio() {
             <img
               className="portfolio__content__items__item__img"
               src={item.image}
+              alt={`name-${item.duAn}`}
             />{' '}
             <h1>{item.duAn}</h1>
             <div
@@ -127,6 +166,7 @@ function Portfolio() {
           </div>
         );
       }
+      return null;
     });
   };
 
@@ -165,6 +205,18 @@ function Portfolio() {
           </div>
           <div className="portfolio__content__items " data-aos="zoom-in-up">
             {renderData()}
+            {/* WAIT SOMETHING  */}
+            {/* {dataProduct.length > currentIndexDataProduct &&
+              checkNgonNgu === 'ALL' && (
+                <button
+                  onClick={setCurrentIndexDataProduct.bind(
+                    this,
+                    currentIndexDataProduct + 3
+                  )}
+                >
+                  Xem thêm
+                </button>
+              )} */}
           </div>
         </div>
       </div>

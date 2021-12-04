@@ -1,12 +1,24 @@
+import shopBookImg from './Assets/images/hinhWeb/shop-book.png';
+import shopBookImgFull from './Assets/images/fullScreen/shop-book-full.png';
+import instagramImg  from './Assets/images/hinhWeb/instagram.png';
+import instagramImgFull from './Assets/images/fullScreen/instagram.png';
+import netflixImg  from './Assets/images/hinhWeb/netflix.png';
+import netflixImgFull from './Assets/images/fullScreen/netflix.png';
+import apiFilm2021Img  from './Assets/images/hinhWeb/api-film-2021.png';
+import apiFilm2021ImgFull from './Assets/images/fullScreen/api-film-2021.png';
+import mernLearnImg from './Assets/images/hinhWeb/MERN-LEARN.png';
+import mernLearnImgFull from './Assets/images/fullScreen/MERN-LEARN.png';
+
 const product = [
     {
         id: 1,
         duAn: 'Shop Book',
         congNghe: 'Reactjs, Redux, Firebase, DevPaypal(Sandbox)',
-        image: 'https://i.imgur.com/MBoTyCD.png',
-        imageDetail:'https://i.imgur.com/PpL87gq.png',
+        // image: 'https://i.imgur.com/MBoTyCD.png',
+        // imageDetail:'https://i.imgur.com/PpL87gq.png',
+        image: shopBookImg,
+        imageDetail:shopBookImgFull,
         ngonNgu: 'REACJS',
-        
         linkDemo: 'https://shop-bae1a.firebaseapp.com',
         moTa:'Thao tác với Firebase, tạo dữ liệu cần dùng, kết nối firebase với Reacjs, lấy những thông tin dữ liệu của firebase để đưa vào của redux, render và xử lý các chức năng của website, sử dụng developer paypal(sanbox) để tạo thông tin tài khoản paypal thanh toán trực tiếp qua paypal'
       },
@@ -14,29 +26,37 @@ const product = [
         id:10,
         duAn:'Clone Instagram',
         congNghe :'Reacjs, Firebase, Material UI, SASS',
-        image:'https://i.imgur.com/t0CrqwD.png',
-        imageDetail:'https://i.imgur.com/7aDWloS.png',
+        // image:'https://i.imgur.com/t0CrqwD.png',
+        // imageDetail:'https://i.imgur.com/7aDWloS.png',
+        image:instagramImg,
+        imageDetail:instagramImgFull,
         ngonNgu: 'REACJS',
         linkDemo : 'https://hosting-instagram-clone.firebaseapp.com',
         moTa:'Sử dụng firebase để tạo tài khoản đăng nhập, đăng nhập thông qua facebook hoặc google.Thao tác với ReactJS tạo ra giao diện và các chức năng.'
 
       },
       {
-        id: 8,
-        duAn: 'Netflix HomePage',
-        congNghe: 'Reactjs, Call API,Reacjs Youtube',
-        image:'https://i.imgur.com/YH9mIbD.png',
-        imageDetail:'https://i.imgur.com/YVJ0DDw.png',
+        id: 28,
+        duAn: 'MERN LEARN',
+        congNghe: 'Mongo, Express, NodeJS, Reactjs, Call API, Heroku, Netlify',
+        // image:'https://i.imgur.com/YH9mIbD.png',
+        // imageDetail:'https://i.imgur.com/YVJ0DDw.png',
+        image:mernLearnImg,
+        imageDetail:mernLearnImgFull,
         ngonNgu: 'REACJS',
-        linkDemo: 'http://netflix-home.surge.sh/',
-        moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
+        linkDemo: 'https://angry-euler-1c98ac.netlify.app/',
+        moTa:'Sử dụng NodeJS để xây dựng server RESTful API, sử dụng ReactJS để call API render giao diện, dùng Heroku để deploy Nodejs ra website và dùng Netlify để đưa ReactJS ra website '
       },
+  
+
       {
         id:22,
         duAn: 'MOVIE-API',
         congNghe: 'ReactJS, Firebase(deploy)',
-        image:'https://i.imgur.com/SL6OmsS.png',
-        imageDetail:'https://i.imgur.com/DVHDpTa.png',
+        // image:'https://i.imgur.com/SL6OmsS.png',
+        // imageDetail:'https://i.imgur.com/DVHDpTa.png',
+        image:apiFilm2021Img,
+        imageDetail:apiFilm2021ImgFull,
         ngonNgu:'REACJS',
         linkDemo:'https://film-api-redux-2021.firebaseapp.com',
         moTa:'Tôi sử dụng redux để lưu trữ dữ liệu khi call Api từ server và tạo giao điện render ra màn hình, và sử dụng firebase để deploy lên website',
@@ -50,6 +70,18 @@ const product = [
         ngonNgu:'REACJS',
         linkDemo:'https://shoes-dtv.firebaseapp.com',
         moTa:'Tôi sử dụng React để tạo ra giao diện theo các website, dữ liệu lưu trữ bằng redux và sử dụng firebase để tạo hosting.',
+      },
+      {
+        id: 8,
+        duAn: 'Netflix HomePage',
+        congNghe: 'Reactjs, Call API,Reacjs Youtube',
+        // image:'https://i.imgur.com/YH9mIbD.png',
+        // imageDetail:'https://i.imgur.com/YVJ0DDw.png',
+        image:netflixImg,
+        imageDetail:netflixImgFull,
+        ngonNgu: 'REACJS',
+        linkDemo: 'http://netflix-home.surge.sh/',
+        moTa:'Lấy dữ liệu từ API render ra giao diện, tạo giao diện giống với Netflix, sử dụng Reacjs Youtube để tải dữ liệu video.'
       },
       {
         id:21,
@@ -110,6 +142,16 @@ const product = [
         ngonNgu:'REACJS',
         linkDemo:'http://tesla-clone24.surge.sh',
         moTa:'Tôi sử dụng React, Redux/Toolkit, Styled-components để tạo ra giao diện website Tesla, sử dụng surge để tạo hosting.',
+      },
+      {
+        id:27,
+        duAn: 'Disney',
+        congNghe: 'ReactJS, Styled-Components, Redux/Toolkit, Surge(deploy)',
+        image:'https://i.imgur.com/IaQk2iJ.png',
+        imageDetail:'https://i.imgur.com/Ofh8v26.png',
+        ngonNgu:'REACJS',
+        linkDemo:'http://clone-disneydtv.surge.sh/',
+        moTa:'Tôi sử dụng React, Redux/Toolkit, Styled-components để tạo ra giao diện website Disney, sử dụng surge để tạo hosting.',
       },
       {
         id:14,

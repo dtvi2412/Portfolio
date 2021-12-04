@@ -2,9 +2,9 @@
     padding:100px 0;
     margin-top:50px;
     color:#fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
     &__avarta{
         display: flex;
         justify-content: center;
@@ -24,6 +24,7 @@
         }
     }
     &__content{
+     
         &__text{
             text-align: center;
             margin:0 20px;
