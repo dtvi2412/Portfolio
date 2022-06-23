@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import product from '../../listProduct';
 import PopupDetail from '../PopupDetail/PopupDetail';
 import './Portfolio.scss';
+import { NAME_REACT } from '../../utils/constants';
 function Portfolio() {
   const data = product;
   const [dataProduct, setDataProduct] = useState([]);
@@ -48,8 +49,8 @@ function Portfolio() {
     if (name === 'ALL') {
       setCheckNgonNgu('ALL');
     }
-    if (name === 'REACJS') {
-      setCheckNgonNgu('REACJS');
+    if (name === NAME_REACT) {
+      setCheckNgonNgu(NAME_REACT);
     }
     if (name === 'HTML') {
       setCheckNgonNgu('HTML');
@@ -81,9 +82,9 @@ function Portfolio() {
     //       );
     //     });
     // }
-    // if (checkNgonNgu === 'REACJS') {
+    // if (checkNgonNgu === NAME_REACT) {
     //   return dataProduct
-    //     .filter((item) => item.ngonNgu === 'REACJS')
+    //     .filter((item) => item.ngonNgu === NAME_REACT)
     //     .map((item, index) => {
     //       return (
     //         <div key={index} className="portfolio__content__items__item react">
@@ -188,7 +189,7 @@ function Portfolio() {
             </p>
             <p
               onClick={() => {
-                handleChangeNgonNgu('REACJS');
+                handleChangeNgonNgu(NAME_REACT);
               }}
               className="list"
             >

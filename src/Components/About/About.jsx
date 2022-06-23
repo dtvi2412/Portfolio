@@ -6,43 +6,53 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import product from '../../listProduct';
+// import product from '../../listProduct';
+
+const language = [
+  {
+    id: 1,
+    name: 'Javascript (ES6+)',
+  },
+  {
+    id: 2,
+    name: 'HTML5 & (S)CSS',
+  },
+  {
+    id: 3,
+    name: 'NodeJS',
+  },
+  {
+    id: 4,
+    name: 'Express & MongoDB',
+  },
+  {
+    id: 5,
+    name: 'ReactJS & Redux',
+  },
+  {
+    id: 6,
+    name: 'TypeScript',
+  },
+  {
+    id: 7,
+    name: 'Tailwindcss',
+  },
+  {
+    id: 8,
+    name: 'Bootstrap & Material UI',
+  },
+  {
+    id: 9,
+    name: 'Postman & Insomnia',
+  },
+  {
+    id: 10,
+    name: 'Firebase',
+  },
+];
 function About() {
-  const data = product;
-  const language = [
-    {
-      id: 1,
-      name: 'Javascript (ES6+)',
-    },
-    {
-      id: 2,
-      name: 'ReactJS & Redux',
-    },
-    {
-      id: 3,
-      name: 'HTML5 & (S)CSS',
-    },
-    {
-      id: 4,
-      name: 'Firebase',
-    },
-    {
-      id: 5,
-      name: 'Bootstrap & Material UI',
-    },
-    {
-      id: 6,
-      name: 'Express & MongoDB',
-    },
-    {
-      id: 7,
-      name: 'Formik & Postman',
-    },
-    {
-      id: 8,
-      name: 'TypeScript',
-    },
-  ];
+  // const data = product;
+
   //Load Language
   const [dataLanguage, setDataLanguage] = useState([]);
   const loadLanguage = () => {
@@ -64,9 +74,9 @@ function About() {
     github: 'https://github.com/dtvi2412',
     gmail: 'dtvi2412@gmail.com',
   };
-  const [duLieu, setDuLieu] = useState([]);
+  // const [duLieu, setDuLieu] = useState([]);
   useEffect(() => {
-    setDuLieu(data);
+    // setDuLieu(data);
     setDataLanguage(language);
   }, []);
 

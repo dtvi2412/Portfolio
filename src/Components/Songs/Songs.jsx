@@ -12,45 +12,83 @@ import image4 from '../../Assets/Music/images/music4.jpg';
 import image5 from '../../Assets/Music/images/music5.jpg';
 
 import './Song.scss';
+
+const listMusic = [
+  {
+    id: 0,
+    sound: music1,
+    label: 'Believer',
+    song: ' Imagine Dragons',
+    linkImage: image1,
+  },
+  {
+    id: 1,
+    sound: music2,
+    label: "Gangsta's Paradise",
+    song: ' Imagine Dragons',
+    linkImage: image2,
+  },
+  {
+    id: 2,
+    sound: music3,
+    label: 'GLORIOUS',
+    song: ' Imagine Dragons',
+    linkImage: image3,
+  },
+  {
+    id: 3,
+    sound: music4,
+    label: 'I Wanna Fly',
+    song: ' Imagine Dragons',
+    linkImage: image4,
+  },
+  {
+    id: 4,
+    sound: music5,
+    label: 'Lemonade',
+    song: ' Imagine Dragons',
+    linkImage: image5,
+  },
+];
 function Songs() {
   //List Music
-  const [listMusic, setListMusic] = useState([
-    {
-      id: 0,
-      sound: music1,
-      label: 'Believer',
-      song: ' Imagine Dragons',
-      linkImage: image1,
-    },
-    {
-      id: 1,
-      sound: music2,
-      label: "Gangsta's Paradise",
-      song: ' Imagine Dragons',
-      linkImage: image2,
-    },
-    {
-      id: 2,
-      sound: music3,
-      label: 'GLORIOUS',
-      song: ' Imagine Dragons',
-      linkImage: image3,
-    },
-    {
-      id: 3,
-      sound: music4,
-      label: 'I Wanna Fly',
-      song: ' Imagine Dragons',
-      linkImage: image4,
-    },
-    {
-      id: 4,
-      sound: music5,
-      label: 'Lemonade',
-      song: ' Imagine Dragons',
-      linkImage: image5,
-    },
-  ]);
+  // const [listMusic, setListMusic] = useState([
+  //   {
+  //     id: 0,
+  //     sound: music1,
+  //     label: 'Believer',
+  //     song: ' Imagine Dragons',
+  //     linkImage: image1,
+  //   },
+  //   {
+  //     id: 1,
+  //     sound: music2,
+  //     label: "Gangsta's Paradise",
+  //     song: ' Imagine Dragons',
+  //     linkImage: image2,
+  //   },
+  //   {
+  //     id: 2,
+  //     sound: music3,
+  //     label: 'GLORIOUS',
+  //     song: ' Imagine Dragons',
+  //     linkImage: image3,
+  //   },
+  //   {
+  //     id: 3,
+  //     sound: music4,
+  //     label: 'I Wanna Fly',
+  //     song: ' Imagine Dragons',
+  //     linkImage: image4,
+  //   },
+  //   {
+  //     id: 4,
+  //     sound: music5,
+  //     label: 'Lemonade',
+  //     song: ' Imagine Dragons',
+  //     linkImage: image5,
+  //   },
+  // ]);
   //Play and pause Music
   const [playing, setPlaying] = useState(false);
   //CurrentIndex Music
@@ -74,6 +112,7 @@ function Songs() {
 
     audio.onplay = function () {
       cdThumb.play();
+      audio.volume = 0.2;
     };
 
     audio.addEventListener('pause', function () {
@@ -105,7 +144,7 @@ function Songs() {
     });
     btnChooseMusic.addEventListener('click', () => {
       cdThumb.cancel();
-      console.log('stop');
+      // console.log('stop');
     });
 
     //Change Progress Music
@@ -122,7 +161,7 @@ function Songs() {
       setPlaying(false);
     } else {
       audio.play();
-      audio.volume = 0.5;
+      audio.volume = 0.2;
       setPlaying(true);
     }
   };
